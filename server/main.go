@@ -36,7 +36,7 @@ func serveDefaultPage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	http.ServeFile(w, r, defaultPage)
+	http.ServeFile(w, r, *defaultPage)
 }
 
 func ravenlog(msg string) {
